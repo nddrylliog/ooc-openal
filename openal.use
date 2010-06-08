@@ -1,0 +1,6 @@
+= All
+Name: OpenAL
+Description: Open Audio Library
+Pkgs: openal
+Includes: AL/al.h
+SourcePath: .
