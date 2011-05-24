@@ -29,12 +29,12 @@ alGetDoublev:  extern func (UInt, Double*)
 alDistanceModel: extern func (UInt)
 
 // listener attributes
-alListener: extern(alListenerfv) func ~fv (UInt, Float*)
-alListener: extern(alListeneriv) func ~iv (UInt, Int*)
-alListener: extern(alListener3f) func ~f3 (UInt, Float, Float, Float)
-alListener: extern(alListener3i) func ~i3 (UInt, Int, Int, Int)
-alGetListener: extern(alGetListenerf) func ~f (UInt, Float*)
-alGetListener: extern(alGetListeneri) func ~i (UInt, Int*)
+alListenerfv: extern func (UInt, Float*)
+alListeneriv: extern func (UInt, Int*)
+alListener3f: extern func (UInt, Float, Float, Float)
+alListener3i: extern func (UInt, Int, Int, Int)
+alGetListenerf: extern func (UInt, Float*)
+alGetListeneri: extern func (UInt, Int*)
 
 // source attributes
 alSourcefv: extern func (UInt, UInt, Float*)
