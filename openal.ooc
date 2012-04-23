@@ -64,7 +64,7 @@ alBufferi:  extern func (UInt, UInt, Int)
 alGetBufferi: extern func (UInt, UInt, Int*)
 
 // buffer operations
-alBufferData: extern func (UInt, UInt, Pointer, SizeT, SizeT)
+alBufferData: extern func (ALuint, ALformat, Char*, ALsizei, ALsizei)
 
 
 //
@@ -144,7 +144,15 @@ AL_BITS:      extern UInt
 AL_CHANNELS:  extern UInt
 
 // buffer format
-AL_FORMAT_MONO8:    extern UInt
-AL_FORMAT_MONO16:   extern UInt
-AL_FORMAT_STEREO8:  extern UInt
-AL_FORMAT_STEREO16: extern UInt
+ALformat: enum {
+    mono8    : extern(AL_FORMAT_MONO8)
+    mono16   : extern(AL_FORMAT_MONO16)
+    stereo8  : extern(AL_FORMAT_STEREO8)
+    stereo16 : extern(AL_FORMAT_STEREO16)
+}
+
+ALsizei: cover from Int
+ALint: cover from Int
+ALuint: cover from UInt
+
+
