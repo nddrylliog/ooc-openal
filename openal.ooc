@@ -1,6 +1,27 @@
 use openal
 
 //
+// ALC
+//
+
+ALCDevice: cover from ALCdevice* {
+}
+
+ALCContext: cover from ALCcontext* {
+}
+
+alcOpenDevice: extern func (Pointer) -> ALCDevice
+alcCloseDevice: extern func (ALCDevice)
+
+alcCreateContext: extern func (ALCDevice, Pointer) -> ALCContext
+alcMakeContextCurrent: extern func (ALCContext)
+alcDestroyContext: extern func (ALCContext)
+
+//
+// AL
+//
+
+//
 // functions
 //
 
