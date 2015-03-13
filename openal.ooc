@@ -26,6 +26,7 @@ alcDestroyContext: extern func (ALCContext)
 //
 
 alGetError: extern func -> UInt
+alGetString: extern func (i: UInt) -> CString
 
 alEnable:    extern func (Int)
 alDisable:   extern func (Int)
