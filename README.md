@@ -6,7 +6,7 @@ Basic OpenAL bindings for ooc.
 
 ### Authors
 
-  * Amos Wenger <fasterthanlime@gmail.com>
+  * Amos Wenger
 
 ### Links
 
