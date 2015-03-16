@@ -1,4 +1,5 @@
 use openal
+include AL/al, AL/alc
 
 //
 // ALC
