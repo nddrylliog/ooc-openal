@@ -2,7 +2,7 @@
 
 ## ooc-openal
 
-Basic OpenAL bindings for ooc
+Basic OpenAL bindings for ooc.
 
 ### Authors
 
